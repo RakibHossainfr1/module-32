@@ -1,14 +1,25 @@
-// 1 let vs const 
+// 1.1 let vs const 
 // const connot ReAssign
 const name = 'Rakib';
 // let do Assign
 let age = 22;
 age = 23;
 
-// Tlmpate Stgring 
-// const name = 'rakib';
-// const age = 22;
+// Defult Parameter
+
+function maxNumber(arrays = []){
+    const max = Math.max(...arrays);
+    return max;
+}
+const biggest = maxNumber([ 79, 34, 88]);
+console.log(biggest);
+
+// 1.3 Tlmpate Stgring 
+const companyName = 'rakib'; 
+const compnayOld = 22;
 const country = 'Bangaladesh';
 
-const myAdress = `My name ${name}. I am ${age} years old. I come form ${country}`
+const myAdress = `My company name is ${companyName}.My company ${compnayOld} years old. We are form ${country}`
 console.log(myAdress);   
+
+// 1.4 
